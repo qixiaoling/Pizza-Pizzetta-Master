@@ -1,0 +1,92 @@
+/*.modal-section-overlay {*/
+/*    display: none;*/
+/*    width: 70vw;*/
+/*    max-width: 60vw;*/
+/*    margin: 0 auto;*/
+/*    height: 50vh;*/
+/*    background: var(--clr-yellow);*/
+/*    color: var(--clr-dark);*/
+/*    border-radius: var(--radius-larger);*/
+/*    position: absolute;*/
+/*    top: 300px;*/
+/*    left: 300px;*/
+/*}*/
+.modal-section-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5) ;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -10;
+    transition: var(--transition);
+
+}
+.show-modal {
+    visibility: visible;
+    z-index: 10;
+}
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--clr-yellow);
+    border-radius: var(--radius);
+    width: 60vw;
+    height: 50vh;
+    text-align: center;
+}
+.modal-title {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    position: relative;
+}
+.modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: transparent;
+    background: transparent;
+    font-size: var(--fs-h3);
+    color: var(--clr-dark);
+    transition: var(--transition);
+}
+.modal-close-btn:hover {
+    transform: rotate(360deg);
+}
+.modal-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media (min-width: 880px) {
+    .modal-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+.modal-content p {
+    font-size: var(--fs-h2);
+    background: var(--clr-red);
+    border-radius: var(--radius);
+    padding: 0.3rem 0.8rem;
+
+}
+.modal-question-btn {
+    font-size: var(--fs-h2);
+    padding: 0.3rem 0.8rem;
+    background: transparent;
+    border-radius: var(--radius);
+    border: 3px solid var(--clr-dark);
+    text-decoration: none;
+    color: var(--clr-dark);
+}
