@@ -1,11 +1,11 @@
-import react, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from "../../Component/Navbar";
 import Footer from "../../Component/Footer";
 import './OwnPizza.css';
 import OwnPizza_List from "./OwnPizza_List";
 import OwnPizza_Alert from "./OwnPizza_Alert";
 import Modal from "../../Component/Modal";
-import React from "react";
+
 
 const getLocalStorage = () => {
     let listLS = localStorage.getItem('list');
