@@ -9,7 +9,7 @@ function Modal() {
         <div className={`${isModalOpen ? 'modal-section-overlay show-modal' : 'modal-section-overlay'}`}>
             <div className='modal-container'>
                 <div className='modal-title'>
-                    <h1>Welcome to place order.</h1>
+                    <p>Welcome to place order.</p>
                     <button
                         type='button'
                         className='modal-close-btn'

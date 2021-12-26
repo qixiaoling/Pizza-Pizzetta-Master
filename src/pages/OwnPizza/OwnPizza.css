@@ -18,8 +18,8 @@
     /*don't define height, as the list gets longer*/
 }
 .own-body {
-    width: 70%;
-    max-width: 80%;
+    width: 90%;
+    /*max-width: 80%;*/
     height: 80%;
     margin: 2em auto;
     text-align: center;
