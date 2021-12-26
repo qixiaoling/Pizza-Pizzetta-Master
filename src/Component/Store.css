@@ -1,5 +1,5 @@
 .store-container {
-    max-width: 60%;
+    width: 90%;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,8 @@
     border-radius: var(--radius);
     font-size: var(--fs-h3);
     color: var(--clr-dark);
-    padding: 0.65rem 1.25rem;
+    padding : 0.35rem 0.85rem;
+    /*padding: 0.65rem 1.25rem;*/
     transition: var(--transition);
 }
 .store-btn:hover {
@@ -72,6 +73,12 @@
 .desc i{
      margin-right: 2rem;
  }
+@media (min-width: 880px) {
+    .store-btn {
+        padding: 0.65rem 1.25rem;
+    }
+
+}
 @media (min-width: 1200px) {
     .store-content {
         display: grid;
